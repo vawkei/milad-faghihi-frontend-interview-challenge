@@ -1,4 +1,4 @@
-.timeFrame-container{
+/* .timeFrame-container{
     position: relative;
     width: 30%;
     min-width: 12rem;
@@ -55,4 +55,74 @@
 }
 
 
+ */
 
+
+
+
+
+ .timeFrame-container{
+    
+    width: 30%;
+    min-width: 12rem;
+}
+
+.top-card{
+    background-color: rgb(246, 171, 32);
+    height: 5rem;
+    position: relative;
+}
+.top-card img{
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    
+}
+
+.main-card{
+    background-color: green;   
+    margin-top: -2.5rem;
+    z-index: 3000;
+    position: absolute;
+    top: 4.6rem;
+    left: 0rem;
+    width: 100%;
+}
+.main-card ul{
+    padding: 0;
+    margin: 0;
+}
+.main-card li{
+    list-style: none;
+}
+
+
+.first-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first-row h3,p{
+    color: white;
+}
+.first-row p{
+    font: bold;
+}
+
+.second-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.second-row h2,h4{
+    color: white;
+}
+
+.third-row{
+    width: 100%;
+}
+.third-row small{
+    font-size: 12px;
+}
