@@ -1,4 +1,4 @@
-import classes from "../job-timeframe/Timeframe.module.css";
+import classes from "./LearningTimeframe.module.css";
 import { learningTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
@@ -7,7 +7,7 @@ const LearningTimeFrame = () => {
   console.log(learningTimeFramesArray);
 
   return (
-    <div className={classes["job-container"]}>
+    <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}></Card>
 
       <Card className={classes["main-card"]}>

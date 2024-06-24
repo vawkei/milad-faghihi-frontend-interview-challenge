@@ -1,19 +1,20 @@
 .timeFrame-container{
     position: relative;
-    
+    width: 30%;
+    min-width: 12rem;
 }
 
 .top-card{
-    background-color: orange;
+    background-color: rgb(246, 171, 32);
+    height: 5rem;
     
 }
 
+
 .main-card{
-    background-color: green;
-    /* width: 100%;
-    max-width: 70rem; */
-    
-    margin-top: -1rem;
+    background-color: green;   
+    margin-top: -2.5rem;
+    z-index: 3000;
 }
 .main-card ul{
     padding: 0;
@@ -52,4 +53,6 @@
 .third-row small{
     font-size: 12px;
 }
+
+
 

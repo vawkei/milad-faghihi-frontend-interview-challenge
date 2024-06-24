@@ -1,14 +1,16 @@
-import classes from "./Timeframe.module.css";
+import classes from "./JobTimeframe.module.css";
 import { jobTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
-const JobTimeFrame = () => {
+const JobTimeFrame = (props) => {
   const jobTimeFrameArray = jobTimeFrames;
   console.log(jobTimeFrameArray);
 
   return (
     <div className={classes["timeFrame-container"]}>
-      <Card className={classes["top-card"]}></Card>
+      <Card className={classes["top-card"]}>
+        <img src="" alt="" />
+      </Card>
 
       <Card className={classes["main-card"]}>
         {jobTimeFrameArray.map((jtf) => {
@@ -42,3 +44,4 @@ const JobTimeFrame = () => {
 };
 
 export default JobTimeFrame;
+

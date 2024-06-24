@@ -1,4 +1,4 @@
-import classes from "../job-timeframe/Timeframe.module.css";
+import classes from "./EmailsTimeframe.module.css";
 import { emailTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
@@ -7,7 +7,7 @@ const EmailsTimeFrames = () => {
   console.log(emailTimeFramesArray);
 
   return (
-    <div className={classes["job-container"]}>
+    <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}></Card>
 
       <Card className={classes["main-card"]}>
