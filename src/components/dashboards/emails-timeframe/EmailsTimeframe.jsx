@@ -1,6 +1,6 @@
 import classes from "./EmailsTimeframe.module.scss";
 //import classes from "./EmailsTimeframe.module.css";
-import { emailTimeFrames } from "../../home/TimeFrames";
+// import { emailTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
 const EmailsTimeFrames = (props) => {

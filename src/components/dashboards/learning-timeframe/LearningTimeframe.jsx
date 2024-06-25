@@ -1,6 +1,6 @@
-import classes from "./LearningTimeframe.module.css";
+import classes from "./LearningTimeframe.module.scss";
 // import classes from "./LearningTimeframe.module.css";
-import { learningTimeFrames } from "../../home/TimeFrames";
+// import { learningTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
 const LearningTimeFrame = (props) => {

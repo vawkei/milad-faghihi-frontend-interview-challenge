@@ -1,6 +1,6 @@
 import classes from "./FunTimeframe.module.scss";
 // import classes from "./FunTimeframe.module.css";
-import { funTimeFrames } from "../../home/TimeFrames";
+// import { funTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
 const FunTimeFrame = (props) => {

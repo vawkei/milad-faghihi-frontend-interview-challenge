@@ -1,81 +1,99 @@
-.timeFrame-container{
-    
+.timeFrame-container {
+    position: relative;
     width: 30%;
     min-width: 12rem;
-}
-
-.top-card{
-    background-color: rgba(255,189,49,255);
+  
+    @media screen and (max-width: 940px) {
+      width: 90%;
+      // margin-top: -6rem;
+      margin-bottom: 8rem;
+    }
+  }
+  
+  .top-card {
+    background-color: rgb(246, 171, 32);
     height: 5rem;
     position: relative;
-}
-.top-card img{
-    width: 50px;
-    position: absolute;
-    top: 0;
-    right: 1rem;
-    
-}
-
-.main-card{
-    background-color: rgba(12,41,111,255);   
+  
+    img {
+      width: 50px;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+    }
+  }
+  
+  .main-card {
+    background-color: rgba(1, 56, 138, 255);
     margin-top: -2.5rem;
     z-index: 3000;
     position: absolute;
     top: 4.6rem;
     left: 0rem;
     width: 100%;
-}
-.main-card ul{
-    padding: 0;
-    margin: 0;
-}
-.main-card li{
-    list-style: none;
-}
-
-
-.first-row{
+    padding: 1rem;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      list-style: none;
+    }
+  }
+  
+  .first-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.second-row h1,h2{
-    color: white;
-    font-weight: bolder;
-}
-.first-row h3,p{
-    color: white;
-}
-.first-row p{
-    font: bold;
-}
-.second-row{
+  
+    h3,
+    p {
+      color: white;
+      font-weight: bold;
+    }
+  
+    p {
+      font-weight: bold;
+    }
+  
+    @media screen and (max-width: 940px) {
+      h3 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .second-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-}
-.second-row h1,h2{
-    color: white;
-    font-weight: bolder;
-}
-
-.third-row{
-    width: 100%;
-}
-.third-row small{
-    font-size: 12px;
-}
-
-@media screen and (max-width:940px){
-    .timeFrame-container{
-        position: relative;   
-        width: 90%;
-        padding-bottom: 8rem;
+  
+    h1,
+    h2 {
+      color: white;
+      font-weight: bolder;
     }
-    .first-row h3{
-        font-size: 2rem;
-        font-weight: bold;
-    }  
-}
+  
+    @media screen and (max-width: 940px) {
+       
+        justify-content: 2rem;
+    }
+  }
+  
+  .third-row {
+    width: 100%;
+  
+    small {
+      font-size: 12px;
+      @media screen and (max-width:940px){
+        font-size: 1.5rem;
+      }
+    }
+  
+    
+  }
+  

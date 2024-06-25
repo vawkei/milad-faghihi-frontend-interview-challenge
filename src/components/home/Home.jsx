@@ -7,7 +7,7 @@ import MainDashboard from "../dashboards/main-dashboard/MainDashboard";
 const Home = () => {
     return ( 
         <div className={classes.home}>
-            <h2>Home</h2>
+            {/* <h2>Home</h2> */}
             <MainDashboard />
         </div>
      );

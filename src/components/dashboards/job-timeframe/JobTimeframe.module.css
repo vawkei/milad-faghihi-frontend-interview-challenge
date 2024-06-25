@@ -8,7 +8,7 @@
 .top-card{
     background-color: rgba(255,190,140,255);
     height: 5rem;
-    
+    position: relative;
 }
 .top-card img{
     width: 50px;
@@ -26,6 +26,7 @@
     top: 4.6rem;
     left: 0rem;
     width: 100%;
+    padding: 1rem;
 }
 .main-card ul{
     padding: 0;
@@ -45,7 +46,7 @@
     color: white;
 }
 .first-row p{
-    font: bold;
+    font-weight: bold;
 }
 
 .second-row{
@@ -69,15 +70,20 @@
 @media screen and (max-width:940px){
     .timeFrame-container{
         width: 90%;
+        margin-top: -2.5rem;
         margin-bottom: 8rem;
     }
     .first-row h3{
         font-size: 2rem;
         font-weight: bold;
     }
-    /* .second-row{
-        
-    }   */
+    .second-row {
+        justify-content: space-between; 
+    }
+
+    .third-row small {
+        font-size: 1rem; 
+    }
 }
 
 

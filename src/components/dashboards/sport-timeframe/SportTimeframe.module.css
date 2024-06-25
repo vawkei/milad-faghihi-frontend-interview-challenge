@@ -1,5 +1,5 @@
 .timeFrame-container{
-    
+    position: relative;
     width: 30%;
     min-width: 12rem;
 }
@@ -25,6 +25,7 @@
     top: 4.6rem;
     left: 0rem;
     width: 100%;
+    padding: 1rem;
 }
 .main-card ul{
     padding: 0;
@@ -44,7 +45,7 @@
     color: white;
 }
 .first-row p{
-    font: bold;
+    font-weight: bold;
 }
 
 .second-row{
@@ -75,5 +76,12 @@
     .first-row h3{
         font-size: 2rem;
         font-weight: bold;
-    }  
+    } 
+    .second-row {
+        justify-content: space-between; 
+    }
+
+    .third-row small {
+        font-size: 1rem; 
+    } 
 }
