@@ -1,0 +1,84 @@
+.timeFrame-container {
+    position: relative;
+    top: -6rem;
+    width: 30%;
+    min-width: 12rem;
+  
+    @media screen and (max-width: 940px) {
+      width: 90%;
+      margin-bottom: 8rem;
+    }
+  }
+  
+  .top-card {
+    background-color: rgba(0, 239, 255, 255);
+    height: 5rem;
+  
+    img {
+      width: 50px;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+    }
+  }
+  
+  .main-card {
+    background-color: rgba(7, 51, 124, 255);
+    margin-top: -2.5rem;
+    z-index: 3000;
+    position: absolute;
+    top: 4.6rem;
+    left: 0rem;
+    width: 100%;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+  
+    li {
+      list-style: none;
+    }
+  }
+  
+  .first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    h3, p {
+      color: white;
+    }
+  
+    p {
+      font-weight: bold;
+    }
+  
+    @media screen and (max-width: 940px) {
+      h3 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .second-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  
+    h1, h2 {
+      color: white;
+      font-weight: bolder;
+    }
+  }
+  
+  .third-row {
+    width: 100%;
+  
+    small {
+      font-size: 12px;
+    }
+  }
+  

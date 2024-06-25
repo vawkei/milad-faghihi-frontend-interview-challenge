@@ -1,4 +1,5 @@
 import classes from "./LearningTimeframe.module.css";
+// import classes from "./LearningTimeframe.module.css";
 import { learningTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 

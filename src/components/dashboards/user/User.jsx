@@ -1,5 +1,6 @@
+import classes from "./User.module.scss";
+// import classes from "./User.module.css";
 import Card from "../../ui/card/Card";
-import classes from "./User.module.css";
 import avatarImage from "../../../assets/images/avatar.png";
 import { occasions } from "../../home/TimeFrames";
 import { useState } from "react";
@@ -14,18 +15,7 @@ const User = (props) => {
     props.timeframeChangeHandler(occasion)
   };
 
-  // const getFilteredData = () => {
-  //   return timeframes.map((item) => ({
-  //     title: item.title,
-  //     current: item.timeframes[selectedTimeframe].current,
-  //     previous: item.timeframes[selectedTimeframe].previous,
-  //   }));
-  // };
-
   
-  
-
-
   
   return (
     <div className={classes["user-container"]}>

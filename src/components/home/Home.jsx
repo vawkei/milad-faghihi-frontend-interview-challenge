@@ -1,4 +1,5 @@
-import classes from "./Home.module.css";
+import classes from "./Home.module.scss";
+// import classes from "./Home.module.css";
 import MainDashboard from "../dashboards/main-dashboard/MainDashboard";
 
 

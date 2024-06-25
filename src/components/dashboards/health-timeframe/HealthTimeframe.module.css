@@ -44,6 +44,9 @@
     color: white;
     font-weight: bolder;
 }
+.first-row h3,p{
+    color: white;
+}
 .first-row p{
     font: bold;
 }
@@ -54,8 +57,9 @@
     justify-content: space-between;
     padding: 1rem 0;
 }
-.second-row h2,h4{
+.second-row h1,h2{
     color: white;
+    font-weight: bolder;
 }
 
 .third-row{

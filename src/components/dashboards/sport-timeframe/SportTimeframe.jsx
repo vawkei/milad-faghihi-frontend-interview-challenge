@@ -1,4 +1,5 @@
-import classes from "./SportTimeframe.module.css";
+import classes from "./SportTimeframe.module.scss";
+// import classes from "./SportTimeframe.module.css";
 import { sportTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 

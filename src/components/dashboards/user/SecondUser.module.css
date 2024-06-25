@@ -1,0 +1,112 @@
+.user-container {
+    width: 100%;
+    min-width: 12rem;
+    height: 100%;
+  }
+  
+  .top-card {
+    background-color: rgba(74, 183, 255, 255);
+    width: 100%;
+    height: auto; /* Changed to auto for better responsiveness */
+    min-height: 14rem;
+    padding: 1rem;
+    display: flex; /* Added flex for better alignment */
+    flex-direction: column; /* Column direction for content */
+    align-items: center; /* Center align items */
+  }
+  
+  .main-card {
+    background-color: rgba(8, 46, 121, 255);
+    width: 100%;
+    height: auto; /* Changed to auto for better responsiveness */
+    min-height: 8rem;
+    padding: 1rem; /* Added padding for better spacing */
+  }
+  
+  .main-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .main-card li {
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer; /* Added cursor pointer for better UX */
+    text-align: center; /* Center align text */
+  }
+  
+  .main-image img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .content {
+    margin-top: 1rem;
+    text-align: center; /* Center align text */
+  }
+  
+  .content h6 {
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .content h2 {
+    color: white;
+    margin: 0; /* Added margin 0 for better spacing */
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column; /* Column direction for names */
+    align-items: center; /* Center align text */
+  }
+  
+  @media screen and (max-width: 940px) {
+    .user-container {
+        margin-bottom: 6rem;
+        position: relative;
+    }
+  
+    .top-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 15px;
+        position: relative;
+        z-index: 2000;
+        flex-direction: row; /* Row direction for better alignment on smaller screens */
+    }
+  
+    .main-image img {
+        width: 10rem;
+        border-radius: 50%;
+    }
+  
+    .content h6 {
+        font-size: 1.5rem;
+    }
+  
+    .name {
+        display: flex;
+        flex-direction: row; /* Row direction for names on smaller screens */
+    }
+  
+    .main-card {
+        position: absolute;
+        top: 12rem;
+    }
+  
+    .main-card ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .main-card ul li {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+  }
+  
+  

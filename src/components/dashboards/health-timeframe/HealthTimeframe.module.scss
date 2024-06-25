@@ -1,14 +1,13 @@
 .timeFrame-container{
-    position: relative;   
-    top: -6rem; 
+    
     width: 30%;
     min-width: 12rem;
 }
 
 .top-card{
-    background-color: rgba(255,190,140,255);
+    background-color: rgba(255,189,49,255);
     height: 5rem;
-    
+    position: relative;
 }
 .top-card img{
     width: 50px;
@@ -19,7 +18,7 @@
 }
 
 .main-card{
-    background-color: rgba(11,50,127,255);   
+    background-color: rgba(12,41,111,255);   
     margin-top: -2.5rem;
     z-index: 3000;
     position: absolute;
@@ -41,17 +40,20 @@
     align-items: center;
     justify-content: space-between;
 }
+.second-row h1,h2{
+    color: white;
+    font-weight: bolder;
+}
 .first-row h3,p{
     color: white;
 }
 .first-row p{
     font: bold;
 }
-
 .second-row{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1rem 0;
 }
 .second-row h1,h2{
@@ -68,16 +70,12 @@
 
 @media screen and (max-width:940px){
     .timeFrame-container{
+        position: relative;   
         width: 90%;
-        margin-bottom: 8rem;
+        padding-bottom: 8rem;
     }
     .first-row h3{
         font-size: 2rem;
         font-weight: bold;
-    }
-    /* .second-row{
-        
-    }   */
+    }  
 }
-
-

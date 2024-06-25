@@ -1,4 +1,5 @@
-import classes from "./JobTimeframe.module.css";
+ import classes from "./JobTimeframe.module.scss"
+// import classes from "./JobTimeframe.module.css";
 import { jobTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 

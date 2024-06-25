@@ -1,4 +1,5 @@
-import classes from "./HealthTimeframe.module.css";
+import classes from "./HealthTimeframe.module.scss";
+// import classes from "./HealthTimeframe.module.css";
 import { healthTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
