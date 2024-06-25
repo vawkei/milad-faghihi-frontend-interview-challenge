@@ -2,27 +2,53 @@ import Card from "../../ui/card/Card";
 import classes from "./User.module.css";
 import avatarImage from "../../../assets/images/avatar.png";
 import { occasions } from "../../home/TimeFrames";
+import { useState } from "react";
 
-const User = () => {
+const User = (props) => {
+  const [selectedTimeframe, setSelectedTimeframe] = useState("daily");
   const newOccasion = occasions[0];
   console.log(newOccasion);
 
+  const handleClick = (occasion) => {
+    setSelectedTimeframe(occasion);
+    props.timeframeChangeHandler(occasion)
+  };
+
+  // const getFilteredData = () => {
+  //   return timeframes.map((item) => ({
+  //     title: item.title,
+  //     current: item.timeframes[selectedTimeframe].current,
+  //     previous: item.timeframes[selectedTimeframe].previous,
+  //   }));
+  // };
+
+  
+  
+
+
+  
   return (
     <div className={classes["user-container"]}>
       <Card className={classes["top-card"]}>
         <div className={classes["main-image"]}>
-          <img src={avatarImage} alt="image"  />
+          <img src={avatarImage} alt="image" />
         </div>
         <div className={classes.content}>
-            <h6>Report for</h6>
+          <h6>Report for</h6>
+          <div className={classes.name}>
             <h2>Stacey</h2>
             <h2>Castillo</h2>
+          </div>
         </div>
       </Card>
       <Card className={classes["main-card"]}>
         <ul>
           {newOccasion.map((occasion) => {
-            return <li key={occasion}>{occasion.charAt(0).toUpperCase() + occasion.slice(1)}</li>;
+            return (
+              <li key={occasion} onClick={() => handleClick(occasion)}>
+                {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
+              </li>
+            );
           })}
         </ul>
       </Card>

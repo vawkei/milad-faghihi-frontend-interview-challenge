@@ -1,20 +1,30 @@
 .timeFrame-container{
-    /* position: relative; */
+    
     width: 30%;
     min-width: 12rem;
 }
 
 .top-card{
-    background-color: orange;
+    background-color: rgb(246, 171, 32);
     height: 5rem;
+    position: relative;
+}
+.top-card img{
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    
 }
 
 .main-card{
-    background-color: green;
-    /* width: 100%;
-    max-width: 70rem; */
-    
+    background-color: green;   
     margin-top: -2.5rem;
+    z-index: 3000;
+    position: absolute;
+    top: 4.6rem;
+    left: 0rem;
+    width: 100%;
 }
 .main-card ul{
     padding: 0;
@@ -30,8 +40,9 @@
     align-items: center;
     justify-content: space-between;
 }
-.first-row h3,p{
+.second-row h1,h2{
     color: white;
+    font-weight: bolder;
 }
 .first-row p{
     font: bold;
@@ -54,3 +65,14 @@
     font-size: 12px;
 }
 
+@media screen and (max-width:940px){
+    .timeFrame-container{
+        position: relative;   
+        width: 90%;
+        padding-bottom: 8rem;
+    }
+    .first-row h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }  
+}

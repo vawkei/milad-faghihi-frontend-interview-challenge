@@ -43,3 +43,41 @@
 .content h2{
   color: white;
 }
+
+@media screen and (max-width:940px){
+  .user-container{
+    margin-bottom: 6rem;
+    position: relative;
+  }
+  .top-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2000;
+  }
+  .main-image img {
+    width:10rem;
+    border-radius: 50%;
+  }
+  .content h6 {
+    font-size: 1.5rem;
+  }
+  .content.name{
+    display: flex;
+  }
+  .main-card{
+    position: absolute;
+    top: 12rem;
+  }
+  .main-card ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-card ul li{
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}

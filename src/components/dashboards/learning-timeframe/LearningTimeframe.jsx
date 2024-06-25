@@ -2,40 +2,46 @@ import classes from "./LearningTimeframe.module.css";
 import { learningTimeFrames } from "../../home/TimeFrames";
 import Card from "../../ui/card/Card";
 
-const LearningTimeFrame = () => {
-  const learningTimeFramesArray = learningTimeFrames;
-  console.log(learningTimeFramesArray);
+const LearningTimeFrame = (props) => {
+  // const learningTimeFramesArray = learningTimeFrames;
+  //  console.log(learningTimeFramesArray);
+  console.log(props.data);
+  
+  const learningFramesArray = Array.isArray(props.data) ? props.data : [props.data]
+
+  console.log(learningFramesArray);
 
   return (
     <div className={classes["timeFrame-container"]}>
-      <Card className={classes["top-card"]}></Card>
-
-      <Card className={classes["main-card"]}>
-        {learningTimeFramesArray.map((jtf) => {
-          return (
-            <div key={jtf.title} className={classes["frame"]}>
-              <ul>
-                <div className={classes["first-row"]}>
-                  <li>
+      <Card className={classes["top-card"]}>
+        <img src={props.learningImage} alt="" />
+        <Card className={classes["main-card"]}>
+          {learningFramesArray.map((jtf) => {
+            return (
+              <div key={jtf.title} className={classes["frame"]}>
+                <ul>
+                  
+                  <li className={classes["first-row"]}>
                     <h3>
                       {jtf.title.charAt(0).toUpperCase() + jtf.title.slice(1)}
                     </h3>
+                    <p className={classes.ellypsis}>...</p>
                   </li>
-                  <p className={classes.ellypsis}>...</p>
-                </div>
 
-                <div className={classes["second-row"]}>
-                  <h2>{jtf.timeframes.daily.current}</h2>
-                  <h4>Completed</h4>
-                </div>
+                  <li className={classes["second-row"]}>
+                    <span><h1>{jtf.current}</h1></span>
+                    <span><h2>Completed</h2></span>
+                    
+                  </li>
 
-                <div className={classes["third-row"]}>
-                  <small>{`Last Week:${jtf.timeframes.daily.previous} Completed`}</small>
-                </div>
-              </ul>
-            </div>
-          );
-        })}
+                  <div className={classes["third-row"]}>
+                    <small>{`Last Week:${jtf.previous} Completed`}</small>
+                  </div>
+                </ul>
+              </div>
+            );
+          })}
+        </Card>
       </Card>
     </div>
   );

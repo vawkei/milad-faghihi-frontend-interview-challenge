@@ -1,20 +1,30 @@
 .timeFrame-container{
-    /* position: relative; */
+    
     width: 30%;
     min-width: 12rem;
 }
 
 .top-card{
-    background-color: orange;
+    background-color: rgb(246, 171, 32);
     height: 5rem;
+    position: relative;
+}
+.top-card img{
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    
 }
 
 .main-card{
-    background-color: green;
-    /* width: 100%;
-    max-width: 70rem; */
-    
+    background-color: green;   
     margin-top: -2.5rem;
+    z-index: 3000;
+    position: absolute;
+    top: 4.6rem;
+    left: 0rem;
+    width: 100%;
 }
 .main-card ul{
     padding: 0;
@@ -43,8 +53,9 @@
     justify-content: space-between;
     padding: 1rem 0;
 }
-.second-row h2,h4{
+.second-row h1,h2{
     color: white;
+    font-weight: bolder;
 }
 
 .third-row{
@@ -52,4 +63,17 @@
 }
 .third-row small{
     font-size: 12px;
+}
+
+@media screen and (max-width:940px){
+    .timeFrame-container{
+        position: relative;   
+        width: 90%;
+        margin-top: -6rem;
+        margin-bottom: 8rem;
+    }
+    .first-row h3{
+        font-size: 2rem;
+        font-weight: bold;
+    }  
 }
