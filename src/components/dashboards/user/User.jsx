@@ -12,11 +12,9 @@ const User = (props) => {
 
   const handleClick = (occasion) => {
     setSelectedTimeframe(occasion);
-    props.timeframeChangeHandler(occasion)
+    props.timeframeChangeHandler(occasion);
   };
 
-  
-  
   return (
     <div className={classes["user-container"]}>
       <Card className={classes["top-card"]}>
@@ -35,8 +33,13 @@ const User = (props) => {
         <ul>
           {newOccasion.map((occasion) => {
             return (
-              <li key={occasion} onClick={() => handleClick(occasion)}>
-                {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
+              <li
+                key={occasion}
+                onClick={() => handleClick(occasion)}
+                className={
+                  `${selectedTimeframe}` === occasion ? `${classes.active}` : ""
+                }>
+                &#8250; {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
               </li>
             );
           })}
