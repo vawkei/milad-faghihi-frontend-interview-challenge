@@ -5,7 +5,7 @@
 }
 
 .top-card{
-    background-color: rgb(246, 171, 32);
+    background-color: rgba(255,189,49,255);
     height: 5rem;
     position: relative;
 }
@@ -18,7 +18,7 @@
 }
 
 .main-card{
-    background-color: green;   
+    background-color: rgba(12,41,111,255);   
     margin-top: -2.5rem;
     z-index: 3000;
     position: absolute;
