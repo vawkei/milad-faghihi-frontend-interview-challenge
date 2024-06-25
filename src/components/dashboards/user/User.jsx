@@ -1,5 +1,5 @@
-// import classes from "./User.module.scss";
-import classes from "./User.module.css";
+import classes from "./User.module.scss";
+// import classes from "./User.module.css";
 import Card from "../../ui/card/Card";
 import avatarImage from "../../../assets/images/avatar.png";
 import { occasions } from "../../home/TimeFrames";
