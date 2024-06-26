@@ -1,4 +1,11 @@
 .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
     width: 100%;
+    max-width: 76rem;   
     /* padding: 0 10%; */
+    background-color: rgba(12,18,44,255);
 }

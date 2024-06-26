@@ -39,7 +39,7 @@ const User = (props) => {
                 className={
                   `${selectedTimeframe}` === occasion ? `${classes.active}` : ""
                 }>
-                &#8250; {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
+               <span>&#8250;</span> {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
               </li>
             );
           })}
