@@ -16,7 +16,7 @@ const FunTimeFrame = (props) => {
   return (
     <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}>
-        <img src={props.funImage} alt="" />
+        <img src={props.funImage} alt={props.funImage} />
         <Card className={classes["main-card"]}>
           {funTimeFramesArray.map((jtf) => {
             return (

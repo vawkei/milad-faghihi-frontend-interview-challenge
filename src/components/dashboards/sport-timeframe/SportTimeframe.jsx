@@ -6,6 +6,7 @@ import Card from "../../ui/card/Card";
 const SportTimeFrames = (props) => {
   // const sportTimeFramesArray = sportTimeFrames;
   // console.log(sportTimeFramesArray);
+  
   console.log(props.data);
   const sportTimeFramesArray = Array.isArray(props.data) ? props.data : [props.data]
   console.log(sportTimeFramesArray);
@@ -14,7 +15,7 @@ const SportTimeFrames = (props) => {
   return (
     <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}>
-        <img src={props.sportImage} alt="" />
+        <img src={props.sportImage} alt={props.sportImage} />
         <Card className={classes["main-card"]}>
           {sportTimeFramesArray.map((jtf) => {
             return (

@@ -2,17 +2,16 @@ import classes from "./User.module.scss";
 // import classes from "./User.module.css";
 import Card from "../../ui/card/Card";
 import avatarImage from "../../../assets/images/avatar.png";
-import { occasions } from "../../home/TimeFrames";
-import { useState } from "react";
 
 const User = (props) => {
-  const [selectedTimeframe, setSelectedTimeframe] = useState("daily");
-  const newOccasion = occasions[0];
-  console.log(newOccasion);
+  const newOccasion = props.newOccasion;
+  console.log(newOccasion); //resuly of console.log: ['daily', 'weekly', 'monthly']
+  const lisa = props.selectedTimeframe;
+  console.log(lisa);
 
   const handleClick = (occasion) => {
-    setSelectedTimeframe(occasion);
     props.timeframeChangeHandler(occasion);
+    console.log(lisa);
   };
 
   return (
@@ -31,15 +30,17 @@ const User = (props) => {
       </Card>
       <Card className={classes["main-card"]}>
         <ul>
-          {newOccasion.map((occasion) => {
+          {newOccasion.map((occasion, index) => {
             return (
               <li
-                key={occasion}
-                onClick={() => handleClick(occasion)}
+                key={index}
+                type="button"
                 className={
-                  `${selectedTimeframe}` === occasion ? `${classes.active}` : ""
-                }>
-               <span>&#8250;</span> {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
+                  props.selectedTimeframe === occasion ? classes.active : ""
+                }
+                onClick={() => handleClick(occasion)}>
+                <span>&#8250;</span>{" "}
+                {occasion.charAt(0).toUpperCase() + occasion.slice(1)}
               </li>
             );
           })}

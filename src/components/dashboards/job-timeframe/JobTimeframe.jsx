@@ -16,7 +16,7 @@ const JobTimeFrame = (props) => {
   return (
     <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}>
-        <img src={props.jobImage} alt="" />
+        <img src={props.jobImage} alt={props.jobImage} />
         <Card className={classes["main-card"]}>
           {jobTimeFramesArray.map((jtf,index) => {
             return (

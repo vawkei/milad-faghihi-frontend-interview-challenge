@@ -19,8 +19,9 @@ import { useState } from "react";
 
 const MainDashboard = () => {
   const [selectedTimeframe, setSelectedTimeframe] = useState("daily");
+  console.log(selectedTimeframe)
   const newOccasion = occasions[0];
-  console.log(newOccasion);
+  // console.log(newOccasion);
 
   const timeframeChangeHandler = (occasion) => {
     setSelectedTimeframe(occasion);
@@ -35,14 +36,17 @@ const MainDashboard = () => {
   };
 
   const filteredData = getFilteredData();
-  console.log(filteredData);
+  console.log(filteredData); //MainDashboard.jsx:38 (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+
 
   return (
     <div className={classes["parent-container"]}>
       <div className={classes["lefthand-card"]}>
         <User
-          filteredData={filteredData}
           timeframeChangeHandler={timeframeChangeHandler}
+          selectedTimeframe={selectedTimeframe}
+          newOccasion={newOccasion}
+          
         />
       </div>
 

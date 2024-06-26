@@ -55,6 +55,9 @@
         margin-top: 2rem;
       }
     }
+    li.active{
+      color: greenyellow;
+    }
     li span{
       @media screen and (max-width:940px){
         display: none;
@@ -93,8 +96,6 @@
       color: white;
       margin: 0;
     }
-    .active{
-      color: red;
-    }
+    
   }
   

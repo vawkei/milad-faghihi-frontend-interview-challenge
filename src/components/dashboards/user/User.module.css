@@ -47,6 +47,9 @@
   color: white;
   margin: 0;
 }
+ li.active{
+  color: red;
+}
 
 /* .active{ couldnt get this to work without react-router-dom Navs, need more time for it.
   color: red;

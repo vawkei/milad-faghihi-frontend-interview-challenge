@@ -15,7 +15,7 @@ const LearningTimeFrame = (props) => {
   return (
     <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}>
-        <img src={props.learningImage} alt="" />
+        <img src={props.learningImage} alt={props.learningImage} />
         <Card className={classes["main-card"]}>
           {learningFramesArray.map((jtf) => {
             return (

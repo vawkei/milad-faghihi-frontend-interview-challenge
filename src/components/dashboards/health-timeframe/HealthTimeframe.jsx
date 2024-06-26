@@ -13,7 +13,7 @@ const HealthTimeFrames = (props) => {
   return (
     <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}>
-        <img src={props.healthImage} alt="" />
+        <img src={props.healthImage} alt={props.healthImage} />
         <Card className={classes["main-card"]}>
           {healthTimeFramesArray.map((jtf) => {
             return (
