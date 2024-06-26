@@ -17,6 +17,21 @@
     min-width: 25rem;
     max-width: none;
     margin: 0 auto;
+
+    /* ANIMATION */
+    animation-name: slide-mobile;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+
+    @keyframes slide-mobile {
+      from {
+        transform: translateY(-800px);
+      }
+      to {
+        transform: translateY(0px);
+      }
+    }
   }
 }
 
@@ -33,8 +48,12 @@
   animation-fill-mode: forwards;
 
   @keyframes slideIn {
-    from{transform:translateY(100px) }
-    to{transform:translateX(0px) }
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateX(0px);
+    }
   }
 
   @media screen and (max-width: 940px) {
@@ -43,7 +62,6 @@
     padding: 1rem;
     margin-bottom: 5rem;
   }
-  
 }
 
 .card {
@@ -56,17 +74,20 @@
   height: 100%;
   height: auto;
 
-    /* ANIMATION */
-    animation-name: slideIn2;
-    animation-duration: 5s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
+  /* ANIMATION */
+  animation-name: slideIn2;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
 
-
-    @keyframes slideIn2{
-      from{transform: translateX(200px)}
-      to{transform: translateX(0px)}
+  @keyframes slideIn2 {
+    from {
+      transform: translateX(200px);
     }
+    to {
+      transform: translateX(0px);
+    }
+  }
 
   @media screen and (max-width: 940px) {
     flex-direction: column;
