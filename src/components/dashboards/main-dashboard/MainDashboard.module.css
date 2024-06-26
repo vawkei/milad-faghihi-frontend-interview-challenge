@@ -58,6 +58,19 @@
     min-width: 25rem;
     max-width: none;
     margin: 0 auto;
+
+    /* ANIMATION */
+  animation-name: slide-mobile;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+
+  
+  }
+
+  @keyframes slide-mobile{
+    from{transform: translateY(-800px)}
+    to{transform: translateY(0px)}
   }
 
   .lefthand-card {

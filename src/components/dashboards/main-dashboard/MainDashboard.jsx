@@ -1,5 +1,5 @@
-import classes from "./MainDashboard.module.scss";
-//import classes from "./MainDashboard.module.css";
+//import classes from "./MainDashboard.module.scss";
+import classes from "./MainDashboard.module.css";
 import { timeframes } from "../../home/TimeFrames";
 import JobTimeFrame from "../job-timeframe/JobTimeframe";
 import FunTimeFrame from "../fun-timeframe/FunTimeframe";
