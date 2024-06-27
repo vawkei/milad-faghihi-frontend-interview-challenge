@@ -8,3 +8,5 @@ The time wasn't enough for me, as i couldn't complete it. Had about two features
 lol! None was easy, it's development. Developing things aint easy. It's kinda like playing a Dark souls game
 # Parting note
 Thanks for the challenge. loved every bit of it.
+# Extra
+Though the time was up, couldn't finishup within the time frame, I still got back to work on the project. And now i have completed it, I guess so. It took me 2 days extra. Thanks again.
