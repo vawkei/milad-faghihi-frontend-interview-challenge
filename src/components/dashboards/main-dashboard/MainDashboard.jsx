@@ -19,12 +19,19 @@ import { useState } from "react";
 
 const MainDashboard = () => {
   const [selectedTimeframe, setSelectedTimeframe] = useState("daily");
-  console.log(selectedTimeframe)
+  console.log(selectedTimeframe);
+
+  const [prevState, setPrevState] = useState();
+
   const newOccasion = occasions[0];
   // console.log(newOccasion);
 
   const timeframeChangeHandler = (occasion) => {
     setSelectedTimeframe(occasion);
+
+    const newPrevState = occasion;
+    setPrevState(newPrevState);
+
   };
 
   const getFilteredData = () => {
@@ -39,41 +46,61 @@ const MainDashboard = () => {
   console.log(filteredData); //MainDashboard.jsx:38 (6) [{…}, {…}, {…}, {…}, {…}, {…}]
 
 
+  
+
   return (
     <div className={classes["parent-container"]}>
       <div className={classes["lefthand-card"]}>
         <User
+          // getPreviousTimeframes={getPreviousTimeframes}
           timeframeChangeHandler={timeframeChangeHandler}
           selectedTimeframe={selectedTimeframe}
           newOccasion={newOccasion}
-          
         />
       </div>
 
       <div className={classes["card"]}>
-        <JobTimeFrame 
-        data={filteredData.find((item) => item.title === "job")}
-        jobImage={jobImage} />
-        
-        <FunTimeFrame 
-        data={filteredData.find((item) => item.title === "fun")}
-        funImage={funImage} />
+        <JobTimeFrame
+          data={filteredData.find((item) => item.title === "job")}
+          jobImage={jobImage}
+          prevState={prevState}
+          selectedTimeframe={selectedTimeframe}
+        />
 
-        <LearningTimeFrame 
-        data={filteredData.find((item) => item.title === "learning")}
-        learningImage={learningImage} />
+        <FunTimeFrame
+          data={filteredData.find((item) => item.title === "fun")}
+          funImage={funImage}
+          prevState={prevState}
+          selectedTimeframe={selectedTimeframe}
+        />
 
-        <SportTimeFrames 
-        data={filteredData.find((item) => item.title === "sport")}
-        sportImage={sportImage} />
+        <LearningTimeFrame
+          data={filteredData.find((item) => item.title === "learning")}
+          learningImage={learningImage}
+          prevState={prevState}
+          selectedTimeframe={selectedTimeframe}
+        />
 
-        <EmailsTimeFrames 
-        data={filteredData.find((item) => item.title === "emails")}
-        emailsImage={emailsImage} />
-        
-        <HealthTimeFrames 
-        data={filteredData.find((item) => item.title === "health")}
-        healthImage={healthImage} />
+        <SportTimeFrames
+          data={filteredData.find((item) => item.title === "sport")}
+          sportImage={sportImage}
+          prevState={prevState}
+          selectedTimeframe={selectedTimeframe}
+        />
+
+        <EmailsTimeFrames
+          data={filteredData.find((item) => item.title === "emails")}
+          emailsImage={emailsImage}
+          prevState={prevState}
+          selectedTimeframe={selectedTimeframe}
+        />
+
+        <HealthTimeFrames
+          data={filteredData.find((item) => item.title === "health")}
+          healthImage={healthImage}
+                    prevState={prevState}
+          selectedTimeframe={selectedTimeframe}
+        />
       </div>
     </div>
   );

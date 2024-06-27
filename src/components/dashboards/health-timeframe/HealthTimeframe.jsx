@@ -10,6 +10,23 @@ const HealthTimeFrames = (props) => {
   const healthTimeFramesArray = Array.isArray(props.data) ? props.data : [props.data]
   console.log(healthTimeFramesArray);
 
+
+  let x = props.prevState
+
+  const getPreviousTimeFrameLabel = (x,prev) => {
+    if (x === "daily") {
+      return `Yesterday: ${prev} hrs completed`;
+    }
+    if (x === "weekly") {
+      return `Last Week: ${prev} hrs completed`;
+    }
+    if (x === "monthly") {
+      return `Last Month: ${prev} hrs completed`;
+    }
+    return "";
+  };
+
+
   return (
     <div className={classes["timeFrame-container"]}>
       <Card className={classes["top-card"]}>
@@ -34,7 +51,13 @@ const HealthTimeFrames = (props) => {
                   </li>
 
                   <div className={classes["third-row"]}>
-                    <small>{`Last Week:${jtf.previous} Completed`}</small>
+                    {/* <small>{`Last Week:${jtf.previous} Completed`}</small> */}
+                    <small style={{color:"yellow"}}>
+                      {getPreviousTimeFrameLabel(
+                        props.selectedTimeframe,
+                        jtf.previous
+                      )}
+                    </small>
                   </div>
                 </ul>
               </div>
